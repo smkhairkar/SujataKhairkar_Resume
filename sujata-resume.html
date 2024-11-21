@@ -6,129 +6,184 @@
     <title>Sujata Khairkar - Resume</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            margin: 20px;
+            margin: 0;
+            padding: 0;
             color: #333;
+            background-color: #f9f9f9;
         }
-        h1, h2, h3 {
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        header h1 {
+            font-size: 28px;
+            margin: 0;
             color: #2E5D8A;
         }
-        h1 {
-            font-size: 24px;
-            margin-bottom: 5px;
-        }
-        h2 {
-            font-size: 18px;
-            margin-top: 20px;
-        }
-        h3 {
-            font-size: 16px;
-            margin-top: 15px;
+        header .contact-info {
+            font-size: 14px;
+            color: #666;
+            margin-top: 5px;
         }
         .section {
             margin-bottom: 20px;
         }
-        .contact-info, .summary, .education, .skills, .internship, .projects, .certifications, .accomplishments, .profiles {
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 10px;
-        }
-        .contact-info p, .summary p, .education p, .skills p, .internship p, .projects p, .certifications p, .accomplishments p, .profiles p {
-            margin: 0;
+        .section h2 {
+            font-size: 20px;
+            color: #2E5D8A;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
         }
         ul {
-            list-style-type: square;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        ul li {
+            margin-bottom: 8px;
+            position: relative;
             padding-left: 20px;
+        }
+        ul li::before {
+            content: '•';
+            color: #2E5D8A;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .skills span {
+            display: inline-block;
+            background: #f0f0f0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 5px 10px;
+            margin: 5px;
+            font-size: 14px;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: #2E5D8A;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .flex-item {
+            flex: 1 1 48%;
+            margin: 10px 0;
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <header>
+            <h1>Sujata Khairkar</h1>
+            <p class="contact-info">Wardha, India 442001 | 9307800076 | <a href="mailto:sujatamkhair10@gmail.com">sujatamkhair10@gmail.com</a></p>
+        </header>
 
-    <h1>Sujata Khairkar</h1>
-    <div class="contact-info">
-        <p>Wardha, India 442001</p>
-        <p>9307800076 | sujatamkhair10@gmail.com</p>
-    </div>
+        <div class="summary section">
+            <h2>Summary</h2>
+            <p>A motivated graduate seeking a challenging position in a reputable organization to expand my learnings, knowledge, and skills. Committed to delivering innovative solutions while optimizing processes. Excited to work on impactful projects and advance my career.</p>
+        </div>
 
-    <div class="summary section">
-        <h2>Summary</h2>
-        <p>Motivated graduate seeking a challenging position in a reputable organization to expand my learnings, knowledge, and skills. Committed to formulating innovative solutions to challenges while optimizing processes. Looking forward to work with projects where skills in every domain can be utilized for career advancement.</p>
-    </div>
+        <div class="education section">
+            <h2>Education</h2>
+            <div class="flex-container">
+                <div class="flex-item">
+                    <p><strong>MIT Academy of Engineering</strong> — Pune</p>
+                    <p>B.Tech: Information Technology (08/2023)</p>
+                </div>
+                <div class="flex-item">
+                    <p><strong>Shri Vyankatesh Junior College</strong> — Wardha</p>
+                    <p>HSC: Computer Science (04/2019)</p>
+                </div>
+                <div class="flex-item">
+                    <p><strong>Ramabai Deshmukh Public School</strong> — Wardha</p>
+                    <p>SSC: General Studies (06/2017)</p>
+                </div>
+            </div>
+        </div>
 
-    <div class="education section">
-        <h2>Education</h2>
-        <p><strong>MIT Academy of Engineering</strong> — Pune<br>B.Tech: Information Technology (08/2023)</p>
-        <p><strong>Shri Vyankatesh Junior College</strong> — Wardha<br>HSC: Computer Science (04/2019)</p>
-        <p><strong>Ramabai Deshmukh Public School</strong> — Wardha<br>SSC: General Studies (06/2017)</p>
-    </div>
+        <div class="skills section">
+            <h2>Skills</h2>
+            <div>
+                <span>SQL</span>
+                <span>Databases</span>
+                <span>MongoDB</span>
+                <span>AWS</span>
+                <span>Linux</span>
+                <span>Data Visualization</span>
+                <span>Qlik Sense</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+            </div>
+        </div>
 
-    <div class="skills section">
-        <h2>Skills</h2>
-        <p>SQL, Databases, MongoDB, AWS, Linux, Data Visualization, Qlik Sense, HTML, CSS, JavaScript</p>
-    </div>
-
-    <div class="internship section">
-        <h2>Internship</h2>
-        <p><strong>Adiance Technologies Pvt. Ltd.</strong> — Ahmedabad, India<br>JavaScript Developer (06/2024 - Current)</p>
-        <ul>
-            <li>Worked with media servers (ZLMediaKit, Monibuca, Node-Media-Server) to implement recording, playback, and file management features.</li>
-            <li>Optimized configurations, resolved stream stability issues, and enhanced data handling efficiency.</li>
-            <li>Gained hands-on experience with streaming protocols and media server operations.</li>
-        </ul>
-        <p><strong>VOIS Vodafone Intelligent Solutions</strong> — Pune, India<br>Data Analyst Intern (01/2023 - 04/2023)</p>
-        <ul>
-            <li>Developed data visualizations and dashboards to present complex data sets visually, supporting data-driven decision-making using Qlik Sense.</li>
-            <li>Gained proficiency in Qlik Sense and Qlik View, enhancing skills in data manipulation, analysis, and visualization.</li>
-        </ul>
-        <p><strong>Celebal Technologies</strong> — Pune, India<br>Cloud Infra Intern (06/2022 - 07/2022)</p>
-        <ul>
-            <li>Gained hands-on experience with Azure by setting up virtual machines, configuring network security, deploying web applications, and managing storage, building a strong understanding of cloud infrastructure.</li>
-        </ul>
-        <p><strong>The Spark Foundation</strong> — Pune, India<br>Web Developer Intern (06/2021 - 07/2021)</p>
-        <ul>
-            <li>Gained web design skills through an internship project, where I developed a donation website with integrated payment functionality.</li>
-        </ul>
-    </div>
-
-    <div class="projects section">
-        <h2>Projects</h2>
-        <ul>
-            <li><strong>Decentralized, Secured and Transparent Voting System using Blockchain</strong><br>Key Skills: Blockchain Technology Solidity Contracts Truffle Suite</li>
+        <div class="internship section">
+            <h2>Internship</h2>
+            <p><strong>Adiance Technologies Pvt. Ltd.</strong> — Ahmedabad, India<br>JavaScript Developer (06/2024 - Current)</p>
             <ul>
-                <li>Designed the user interface using React Js.</li>
-                <li>Implemented smart contracts on Ethereum blockchain and Ganache as Ethereum client and Metamask for testing.</li>
+                <li>Implemented recording, playback, and file management in media servers.</li>
+                <li>Optimized configurations and resolved stream stability issues.</li>
+                <li>Worked with ZLMediaKit, Monibuca, Node-Media-Server.</li>
             </ul>
-            <li><strong>Ecommerce Website</strong><br>Developed a front-end e-commerce website to sell Indian products based on the idea of "AATMANIRBHAR BHARAT".</li>
-        </ul>
-    </div>
+            <p><strong>VOIS Vodafone Intelligent Solutions</strong> — Pune, India<br>Data Analyst Intern (01/2023 - 04/2023)</p>
+            <ul>
+                <li>Built data dashboards using Qlik Sense, enabling data-driven decision-making.</li>
+                <li>Gained proficiency in Qlik Sense and Qlik View.</li>
+            </ul>
+        </div>
 
-    <div class="certifications section">
-        <h2>Certifications</h2>
-        <ul>
-            <li>AWS Certified Cloud Practitioner</li>
-            <li>Microsoft Azure Fundamentals</li>
-            <li>HackerRank-SQL (Basic & Intermediate)</li>
-            <li>Forage - Developer Job Simulation (Accenture)</li>
-        </ul>
-    </div>
+        <div class="projects section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>Decentralized Voting System using Blockchain</strong></li>
+                <ul>
+                    <li>Designed UI using React.js, implemented Solidity contracts, and tested on Ethereum blockchain.</li>
+                </ul>
+                <li><strong>Ecommerce Website</strong></li>
+                <ul>
+                    <li>Developed a front-end e-commerce platform promoting "Aatmanirbhar Bharat."</li>
+                </ul>
+            </ul>
+        </div>
 
-    <div class="accomplishments section">
-        <h2>Accomplishments</h2>
-        <ul>
-            <li>Secured a position among the top 2% of toppers in the course "Introduction to IoT" offered by Swayam NPTEL and conducted by IIT Kharagpur.</li>
-            <li>Secured a prestigious internship through excellence in the National Engineering Olympiad (NEO).</li>
-        </ul>
-    </div>
+        <div class="certifications section">
+            <h2>Certifications</h2>
+            <ul>
+                <li>AWS Certified Cloud Practitioner</li>
+                <li>Microsoft Azure Fundamentals</li>
+                <li>HackerRank-SQL (Basic & Intermediate)</li>
+                <li>Forage - Developer Job Simulation (Accenture)</li>
+            </ul>
+        </div>
 
-    <div class="profiles section">
-        <h2>Websites, Portfolios, Profiles</h2>
-        <ul>
-            <li><a href="https://github.com/smkhairkar">GitHub</a></li>
-            <li><a href="https://www.linkedin.com/in/sujata-khairkar/">LinkedIn</a></li>
-            <li><a href="https://www.hackerrank.com/sujatamkhairkar">HackerRank</a></li>
-            <li><a href="https://sujatakhairkar10.wixsite.com/my-site">Personal Website</a></li>
-        </ul>
+        <div class="profiles section">
+            <h2>Profiles</h2>
+            <ul>
+                <li><a href="https://github.com/smkhairkar">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/sujata-khairkar/">LinkedIn</a></li>
+                <li><a href="https://www.hackerrank.com/sujatamkhairkar">HackerRank</a></li>
+                <li><a href="https://sujatakhairkar10.wixsite.com/my-site">Personal Website</a></li>
+            </ul>
+        </div>
     </div>
-
 </body>
 </html>
